@@ -48,10 +48,17 @@ String adress = System.console().readLine();
         else{
             System.out.println ("Invaled operation");
             System.out.println (operation+" "+first+" "+second);
+        }
+        System.out.println ("Do you wan to try again?");
+        String again = System.console().readLine();
+        if (again.equals("yes")){
             check_input = true;
         }
-        done();
+        else if (again.equals("no")){
+            check_input = false;
+        }
     }
+     done();
     
 }
 
