@@ -41,11 +41,23 @@ String adress = System.console().readLine();
         else if(operation.equals ("multiplication")){
             System.out.println((first*second));
         }
+        else if(operation.equals ("exponent")){
+            int result  =1;
+            for (int i = 0; i < second; i++){
+                result = result*first;
+            }
+            System.out.println(result);
+        }
         else{
             System.out.println ("Invaled operation");
             System.out.println (operation+" "+first+" "+second);
             check_input = true;
         }
+        done();
     }
+    
+}
+public static void done(){
+    System.out.println("you have done a complete equation");
 }
 }
