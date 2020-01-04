@@ -1,4 +1,4 @@
-v]/******************************************************************************
+/******************************************************************************
 
 Welcome to GDB Online.
 GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
@@ -18,12 +18,17 @@ String adress = System.console().readLine();
     System.out.println(name+" "+adress);
     }
     */
-    System.out.println("what math operation would you like");
-    String operation = System.console().readLine();
+    
+    
     System.out.println("please enter first number");
     int first = Integer.parseInt(System.console().readLine());
     System.out.println("please enter second number");
     int second = Integer.parseInt(System.console().readLine());
+    boolean check_input = true;
+    while(check_input){
+    check_input = false;
+    System.out.println("what math operation would you like");
+    String operation = System.console().readLine();
         if (operation.equals("addition")){
             System.out.println((first+second));
         }
@@ -38,8 +43,9 @@ String adress = System.console().readLine();
         }
         else{
             System.out.println ("Invaled operation");
-            System.out.print (operation+" "+first+" "+second);
+            System.out.println (operation+" "+first+" "+second);
+            check_input = true;
         }
-    
+    }
 }
 }
