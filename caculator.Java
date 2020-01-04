@@ -21,9 +21,9 @@ String adress = System.console().readLine();
     
     
     System.out.println("please enter first number");
-    int first = Integer.parseInt(System.console().readLine());
+    double first = Double.parseDouble(System.console().readLine());
     System.out.println("please enter second number");
-    int second = Integer.parseInt(System.console().readLine());
+    double second = Double.parseDouble(System.console().readLine());
     boolean check_input = true;
     while(check_input){
     check_input = false;
@@ -42,7 +42,7 @@ String adress = System.console().readLine();
             System.out.println((first*second));
         }
         else if(operation.equals ("exponent")){
-            int result = exponentCalculation(first, second);
+            double result = exponentCalculation(first, second);
             System.out.println(result);
         }
         else{
@@ -62,8 +62,8 @@ String adress = System.console().readLine();
     
 }
 
-public static int exponentCalculation(int first, int  second){
-    int result  =1;
+public static double exponentCalculation(double first, double second){
+    double result  =1;
     for (int i = 0; i < second; i++){
         result = result*first;
     }
