@@ -42,10 +42,7 @@ String adress = System.console().readLine();
             System.out.println((first*second));
         }
         else if(operation.equals ("exponent")){
-            int result  =1;
-            for (int i = 0; i < second; i++){
-                result = result*first;
-            }
+            int result = exponentCalculation(first, second);
             System.out.println(result);
         }
         else{
@@ -56,6 +53,14 @@ String adress = System.console().readLine();
         done();
     }
     
+}
+
+public static int exponentCalculation(int first, int  second){
+    int result  =1;
+    for (int i = 0; i < second; i++){
+        result = result*first;
+    }
+    return result;
 }
 public static void done(){
     System.out.println("you have done a complete equation");
