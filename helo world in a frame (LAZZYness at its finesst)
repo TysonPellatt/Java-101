@@ -8,3 +8,47 @@ public class Main
 	    }
 	}
 }
+
+
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+public class Main
+{
+	public static void main(String[] args) {
+	    String name []= new String[]{"Hello", "World", "in","velociraptor", "a", "frame"};
+	    int max = name[0].length();
+	    for(int i = 1;i<name.length;i++){
+	        if(name[i].length()>max){
+	            max = name[i].length();
+	        }
+	        
+	    }
+	    //System.out.print(max);
+	    
+	    //System.out.println("*******");
+	    
+	    for(int i =0;i <max+2;i++){
+	        System.out.print("*");
+	    }
+	        System.out.println();
+	    for(int i =0;i < name.length;i++){
+	    
+	       System.out.print("*");
+	       System.out.print(name[i]);
+	       int difference  = max - name[i].length();
+	       for(int j=0;j<difference;j++){
+	           System.out.print(" ");
+	       }
+	       System.out.println("*");
+	    }
+	       for(int i =0;i <max+2;i++){
+	       System.out.print("*");
+	       }
+	}
+}
