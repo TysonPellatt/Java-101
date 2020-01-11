@@ -52,3 +52,56 @@ public class Main
 	       }
 	}
 }
+
+word in middle
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+public class Main
+{
+	public static void main(String[] args) {
+	    String name []= new String[]{"Hello", "World", "in","velociraptor", "a", "frame"};
+	   //finds word with the most numbers and the word with the most letters the max number 
+	    int max = name[0].length();
+	    for(int i = 1;i<name.length;i++){
+	        if(name[i].length()>max){
+	            max = name[i].length();
+	        }
+	        
+	    }
+	    //System.out.print(max);
+	    
+	    //System.out.println("*******");
+	 //finds th emax then adds 2 for the number of starson the top online   
+	    for(int i =0;i <max+2;i++){
+	        System.out.print("*");
+	    }
+	 //the system takes the # of words in the array and makes the number of stars for it 
+	    System.out.println();
+	    for(int i =0;i < name.length;i++){
+	    
+	    //we would find the differce of the max chracters and subtract it buy the words chracters to make that number of spaces
+	       System.out.print("*");
+	       int difference  = max - name[i].length();
+	       //we would take the difference and spllit it n 2 so we can have the word in the midle of the frames
+	       for(int j=0;j<Math.ceil(difference/2);j++){
+	           System.out.print(" ");
+	       }
+	       System.out.print(name[i]);
+	       //we took the differnce again for the second part of the fram while keeping every star of the fram in astraight line
+	       for(int j=0;j<Math.floor((difference+1)/2);j++){
+	           System.out.print(" ");
+	       }
+	       System.out.println("*");
+	    }
+	    //we would take the max to find the numbers of stars we would have equal to the max nummber +2
+	       for(int i =0;i <max+2;i++){
+	       System.out.print("*");
+	       }
+	}
+}
