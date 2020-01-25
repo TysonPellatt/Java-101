@@ -1,3 +1,5 @@
+*my way(one missing)*
+
 public class Main
 {
 	public static void main(String[] args) {
@@ -13,6 +15,24 @@ public class Main
 		    System.out.print(dash+space);
 		    }
 		    
+		}
+	}
+	
+}
+
+*corrected + propor*
+public class Main
+{
+	public static void main(String[] args) {
+		String dash = "_";
+		String space = " ";
+		
+		
+		for (int i = 0;i < 9;i++){
+		    for(int t = 0;t < 9;t++){
+		    System.out.print(dash+space);
+		    }
+		        System.out.println(dash+space);
 		}
 	}
 	
