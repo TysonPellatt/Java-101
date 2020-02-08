@@ -96,7 +96,21 @@ public class Main
 	    while (l != 0 && !String.valueOf(guess_word).equals(word_chosen)) { //runs while lives are not 0 and we havent guessed the word
 	        System.out.println("\nPlease enter a letter to guess");
 	        input = scan.next().charAt(0);
-	        
+	        boolean new_char = true;
+	        for(int i = 0;i<=previous_chars_counter;i++){
+	          if(previous_chars[i] == input){
+	             new_char=false;
+	             System.out.println("old character, try again");
+	          }  
+	        }
+	        if (new_char == false){
+	            continue;
+	        }
+	        else{
+	            previous_chars[previous_chars_counter]=input;
+	              previous_chars_counter++;
+
+	        }
 	        
 	        if (word_chosen.indexOf(input) != -1) { //if it contains the letter, then index is not -1
 	            for (int i = 0; i < guess_word.length; i ++ ){
@@ -112,10 +126,9 @@ public class Main
 	        System.out.println("You have " + l + " lives left");
 	        for(int i = 0;i < guess_word.length;i++){ //after the letter is guesed it changes the the _ to the lettter depending on the space it is in 
 	            System.out.print(guess_word[i] + " ");
-	            if(int j = 0; j < previous_chars;j++){
-	               previous_chars_counter = user_input
-	            }
+	            
 	        }
+	        
 	    }
 	    
 	    
