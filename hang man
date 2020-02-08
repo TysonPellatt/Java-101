@@ -112,8 +112,8 @@ public class Main
 	        System.out.println("You have " + l + " lives left");
 	        for(int i = 0;i < guess_word.length;i++){ //after the letter is guesed it changes the the _ to the lettter depending on the space it is in 
 	            System.out.print(guess_word[i] + " ");
-	            if(int i = 0; i < previous_chars;i++){
-	               previous_chars 
+	            if(int j = 0; j < previous_chars;j++){
+	               previous_chars_counter = user_input
 	            }
 	        }
 	    }
@@ -121,4 +121,3 @@ public class Main
 	    
 	}
 }
-
