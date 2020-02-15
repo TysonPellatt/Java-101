@@ -87,7 +87,7 @@ public class Main
 	    Random rand = new Random();// makes the new random machine which is an int
 	    int int_random = rand.nextInt(words.length -1);//generate a random index and store it in int_random
 	    word_chosen = words[int_random];//stores the chosen word at index int_random in word_chosen
-	    System.out.println(word_chosen);// it prints out the word the computer chose
+	   
 	    guess_word = new char[word_chosen.length()];//will store then characters of the words
 	    for(int g = 0;g < word_chosen.length();g++) { //set each character as _ to start and will replace it with letter when guessed  
 	        guess_word[g] = '_'; //sets default as _ and will replace with letter when guessed
@@ -157,8 +157,20 @@ public class Main
 	           System.out.println("|    o");
 	           System.out.println("|  / | \\");
 	           System.out.println("|    | ");
-	           System.out.println("|  /   \\"); 
+	           System.out.println("|  /   \\");
+	           System.out.println("You Lose");
+	           System.out.println(word_chosen);// it prints out the word the computer chose
+	            
 	        }
+	        boolean win=true;
+	    for(int j =0;j <word_chosen.length();j++){
+	        if(word_chosen.charAt(j)=='_'){
+	            win = false;
+	        }   
+	    }
+	    if(win == true){
+	    System.out.println(word_chosen);// it prints out the word the computer chose
+	    }
 	    }
 	    
 	    
@@ -166,3 +178,4 @@ public class Main
 	}
 
 }
+ 
