@@ -128,9 +128,41 @@ public class Main
 	            System.out.print(guess_word[i] + " ");
 	            
 	        }
-	        
+	        if(l==4){
+	            System.out.println();
+	            System.out.println("    o");
+	        }
+	        if(l==3){
+	           System.out.println();
+	           System.out.println("    o");
+	           System.out.println("  / | \\");
+	            }
+	        if(l==2){
+	           System.out.println();
+	           System.out.println("    o");
+	           System.out.println("  / | \\");
+	           System.out.println("    | ");   
+	            
+	            }
+	        if(l==1){
+	           System.out.println();
+	           System.out.println("    o");
+	           System.out.println("  / | \\");
+	           System.out.println("    | ");
+	           System.out.println("  /   \\");
+	           }
+	        if(l==0){
+	           System.out.println();
+	           System.out.println("______");
+	           System.out.println("|    o");
+	           System.out.println("|  / | \\");
+	           System.out.println("|    | ");
+	           System.out.println("|  /   \\"); 
+	        }
 	    }
 	    
 	    
+	    
 	}
+
 }
