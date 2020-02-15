@@ -163,13 +163,15 @@ public class Main
 	            
 	        }
 	        boolean win=true;
-	    for(int j =0;j <word_chosen.length();j++){
-	        if(word_chosen.charAt(j)=='_'){
+	    for(int j =0;j <guess_word.length;j++){
+	        if(guess_word[j]=='_'){
 	            win = false;
 	        }   
 	    }
 	    if(win == true){
 	    System.out.println(word_chosen);// it prints out the word the computer chose
+	    System.out.println("You Win");
+	        
 	    }
 	    }
 	    
