@@ -128,7 +128,7 @@ public class Main
 	            System.out.print(guess_word[i] + " ");
 	            
 	        }
-	        if(l==4){
+	        if(l==4){// for when we start losing
 	            System.out.println();
 	            System.out.println("    o");
 	        }
